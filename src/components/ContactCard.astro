@@ -1,0 +1,21 @@
+---
+interface Props {
+    name: string
+    email: string
+}
+
+const {name, email} = Astro.props
+---
+
+<section>
+    <p>{name}</p>
+    <p>
+        <a href={`mailto:${email}`}>{email}</a>
+    </p>
+</section>
+
+<style>
+    section {
+        width: 50%;
+    }
+</style>

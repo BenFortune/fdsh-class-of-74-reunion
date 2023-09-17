@@ -1,0 +1,56 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Information for Fort Dodge Senior High Class of 1974's 50th year class reunion" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=DM+Serif+Display&family=Josefin+Slab&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+		--dodger-red: #a70202;:
+		//--font-family-heading: 'Croissant One', system-ui, sans-serif;
+		//--font-family-heading: 'Josefin Slab', system-ui, sans-serif;
+		//--font-family-heading: 'Playfair Display', system-ui, sans-serif;
+		--font-family-heading: 'DM Serif Display', system-ui, sans-serif;
+		//font-family: 'Croissant One', cursive;
+		//font-family: 'DM Serif Display', serif;
+		//font-family: 'Josefin Slab', serif;
+		//font-family: 'Playfair Display', serif;
+	}
+	html {
+		margin: 0;
+		padding: 0;
+		font-family: system-ui, sans-serif;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+	}
+</style>

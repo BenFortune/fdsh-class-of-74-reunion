@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContactCard from '../components/ContactCard.astro'
+import {COMMITTEE_MEMBERS} from "../commitee-memebers";
+---
+
+<Layout title="FDSH Class of 1974">
+	<header>
+		<img class="fd-logo" alt="Fort Dodge Dodger Logo" src="./fd-dodger-logo.svg">
+		<div>
+			<h1>Fort Dodge Senior High Class of '74</h1>
+			<p>Class Reunion</p>
+		</div>
+	</header>
+	<main>
+		<section>
+			<div class="img-wrapper">
+				<img class="fifty-years-logo" alt="50 years 1974-2024 image" src="./50-years.svg">
+			</div>
+			<p>Believe it or not 2024 will mark the 50th year since we graduated from Fort Dodge Senior High. The Class of 74 Reunion Planning Committee would appreciate your help/attendance in celebrating this milestone. Part of the planning is knowing how many classmates will be able to attend. Please let one of the Committee Member classmates noted below, if you can, or cannot attend. (the “cannot attend confirms you received the message, and we did not overlook any classmate)</p>
+		</section>
+		<section>
+			<div>
+				The Reunion is still in the planning stage.  However, the following activities have been confirmed:
+				<ul>
+					<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/">Rides Bar and Grille</a>.  Snacks will be provided.  Adult beverages will be available at an additional cost.</li>
+					<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/">The Cardiff Center</a>. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
+				</ul>
+			</div>
+			<div>
+				Other activities include:
+				<ul>
+					<li>Saturday: Dodge Boys golf outing – this an annual event, held in conjunction with other FDHS graduating classes.  All proceeds are split between FDHS and St Edmonds.</li>
+				</ul>
+			</div>
+			<div>
+				Other tours are being explored/planned such as:
+				<ul>
+					<li>The recently Renovated Lamar Ballroom</li>
+					<li>Feeling like a teenager again by walking the halls of Fort Dodge Senior High</li>
+					<li>Others??</li>
+				</ul>
+			</div>
+			<p>Stay Tuned to either the FDHS Class of 74 Facebook page or this website page for updates and costs. We look forward to great 50th reunion filled with many conversations, and laughs!</p>
+		</section>
+		<section>
+			<h2>Planning Committee Members</h2>
+			<div class="committee-members">
+				{
+					COMMITTEE_MEMBERS.map((member, index) => {
+						return <ContactCard name={member.name} email={member.email}/>
+					})
+				}
+			</div>
+			<div>
+				Phone numbers for more information:
+				<ul>
+					<li>Daytime: 563.547.2220</li>
+					<li>Evening: 515.571.8999</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	h1 {
+		margin-top: 1rem;
+		margin-bottom: 0;
+		color: var(--dodger-red);
+		font-family: var(--font-family-heading);
+		font-size: 2rem;
+		line-height: 1;
+		text-align: center;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #999;
+	}
+
+	header .fd-logo {
+		width: 120px;
+		margin-right: 24px;
+	}
+
+
+	header p {
+		margin: .75rem 0 0 0;
+		text-align: center;
+		letter-spacing: .5rem;
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	.img-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	.fifty-years-logo {
+		width: 180px;
+		margin-left: 24px;
+	}
+
+	.committee-members {
+		display: flex;
+		flex-wrap: wrap;
+	}
+</style>
