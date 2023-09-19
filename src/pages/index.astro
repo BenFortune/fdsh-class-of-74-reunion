@@ -19,61 +19,62 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		</section>
 	</header>
 	<main>
-		<section>
-			<div class="img-wrapper">
-				<img class="fifty-years-logo" alt="50 years 1974-2024 image" src="./50-years.svg">
-			</div>
-			<p>Believe it or not 2024 will mark the 50th year since we graduated from Fort Dodge Senior High. The Class of 74 Reunion Planning Committee would appreciate your help/attendance in celebrating this milestone. Part of the planning is knowing how many classmates will be able to attend. Please let one of the Committee Member classmates noted below, if you can, or cannot attend.</p>
-		</section>
-		<section>
-			<div>
-				The Reunion is still in the planning stage.  However, the following activities have been confirmed:
-				<ul>
-					<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/">Rides Bar and Grille</a>.  Snacks will be provided.  Adult beverages will be available at an additional cost.</li>
-					<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/">The Cardiff Center</a>. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
-				</ul>
-			</div>
-			<div>
-				Other activities include:
-				<ul>
-					<li>Saturday: Dodge Boys golf outing – this an annual event, held in conjunction with other FDHS graduating classes.  All proceeds are split between FDHS and St Edmonds.</li>
-				</ul>
-			</div>
-			<div>
-				Other tours are being explored/planned such as:
-				<ul>
-					<li>The recently Renovated Lamar Ballroom</li>
-					<li>Feeling like a teenager again by walking the halls of Fort Dodge Senior High</li>
-				</ul>
-			</div>
-			<p>Stay tuned to either the FDHS Class of 74 Facebook page or this website page for updates and costs. We look forward to a great 50th reunion filled with many conversations and laughs!</p>
-		</section>
-		<section>
-			<h2>Committee Members</h2>
-			<div class="committee-members">
-				{
-					COMMITTEE_MEMBERS.map((member, index) => {
-						return <ContactCard name={member.name} email={member.email}/>
-					})
-				}
-			</div>
-			<div>
-				Phone numbers for more information:
-				<ul>
-					<li>Daytime: 563.547.2220</li>
-					<li>Evening: 515.571.8999</li>
-				</ul>
+		<div class="img-wrapper">
+			<img class="fifty-years-logo" alt="50 years 1974-2024 image" src="./50-years.svg">
+		</div>
+		<section class="main-content">
+			<div class="content-wrapper">
+				<h2>Let's Celebrate!</h2>
+				<section>
+					<p>Believe it or not 2024 will mark the 50th year since we graduated from Fort Dodge Senior High. The Class of 74 Reunion Planning Committee would appreciate your help/attendance in celebrating this milestone. Part of the planning is knowing how many classmates will be able to attend. Please let one of the Committee Member classmates noted below, if you can, or cannot attend.</p>
+					<div>
+						The Reunion is still in the planning stage.  However, the following activities have been confirmed:
+						<ul>
+							<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/">Rides Bar and Grille</a>.  Snacks will be provided.  Adult beverages will be available at an additional cost.</li>
+							<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/">The Cardiff Center</a>. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
+						</ul>
+					</div>
+					<div>
+						Other activities include:
+						<ul>
+							<li>Saturday: Dodge Boys golf outing – this an annual event, held in conjunction with other FDHS graduating classes.  All proceeds are split between FDHS and St Edmonds.</li>
+						</ul>
+					</div>
+					<div>
+						Other tours are being explored/planned such as:
+						<ul>
+							<li>The recently Renovated Lamar Ballroom</li>
+							<li>Feeling like a teenager again by walking the halls of Fort Dodge Senior High</li>
+						</ul>
+					</div>
+					<p>Stay tuned to either the FDHS Class of 74 Facebook page or this website page for updates and costs. We look forward to a great 50th reunion filled with many conversations and laughs!</p>
+				</section>
 			</div>
 		</section>
+			<section class="committee-wrapper">
+				<h2>Committee Members</h2>
+				<div class="committee-members">
+					{
+						COMMITTEE_MEMBERS.map((member, index) => {
+							return <ContactCard name={member.name} email={member.email}/>
+						})
+					}
+				</div>
+				<div>
+					Phone numbers for more information:
+					<ul>
+						<li>Daytime: 563.547.2220</li>
+						<li>Evening: 515.571.8999</li>
+					</ul>
+				</div>
+			</section>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: -108px auto auto auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
+		margin: auto auto auto auto;
+		padding: 0;
 		font-size: 20px;
 		line-height: 1.6;
 	}
@@ -89,7 +90,12 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 	}
 
 	h2 {
-		font-family: var(--font-family-heading)
+		font-family: var(--font-family-heading);
+		font-size: 3rem;
+		text-align: center;
+		text-decoration: underline;
+		text-decoration-color: #b18335;
+		text-underline-offset: .5rem;
 	}
 
 	header {
@@ -116,6 +122,7 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 
 	header .right-col p {
 		margin: 0;
+		color: #b18335;
 	}
 
 	header .fd-logo {
@@ -132,19 +139,60 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		text-decoration: none;
 	}
 
+	.main-content {
+		position: relative;
+		padding-top: 125px;
+		padding-bottom: 60px;
+		background-image: url(./background-idea-3.jpeg);
+		background-size: contain;
+	}
+
+	.main-content h2 {
+		margin: 0 0 1.5rem 0;
+		line-height: 1;
+		color: #333;
+	}
+
+	.main-content section, .committee-wrapper {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
+	.content-wrapper {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 24px 36px;
+		background-color: #FFF;
+		border: 2px solid #b18335;
+		border-radius: 6px;
+	}
+
 	.img-wrapper {
 		display: flex;
 		justify-content: center;
+		width: 1400px;
+		max-width: 1400px;
+		top: 75px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		position: absolute;
+		z-index: 100;
 	}
 
 	.fifty-years-logo {
 		width: 180px;
-		margin-left: 24px;
 	}
 
 	.committee-members {
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	@media (min-width: 1920px) {
+		.main-content {
+			background-size: cover;
+		}
 	}
 
 	@media (max-width: 1399px) {
