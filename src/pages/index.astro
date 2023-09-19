@@ -70,7 +70,7 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 
 <style>
 	main {
-		margin: auto;
+		margin: -108px auto auto auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
@@ -123,6 +123,15 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		margin-right: 24px;
 	}
 
+	a {
+		color: #1b4d89;
+	}
+
+	a:hover, a:focus, a:visited {
+		color: #6CF;
+		text-decoration: none;
+	}
+
 	.img-wrapper {
 		display: flex;
 		justify-content: center;
@@ -136,6 +145,12 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 	.committee-members {
 		display: flex;
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: 1399px) {
+		main {
+			margin-top: auto;
+		}
 	}
 
 	@media (max-width: 1200px) {
