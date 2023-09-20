@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b18335;
+      }
+
+      .cls-2 {
+        font-size: 600px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Iowan Old Style";
+      }
+
+      .cls-3 {
+        font-size: 575px;
+      }
+
+      .cls-4 {
+        font-size: 87.303px;
+      }
+
+      .cls-4, .cls-5 {
+        font-style: italic;
+      }
+
+      .cls-5 {
+        font-size: 41.905px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="300" cy="300" r="300"/>
+  <text id="_5" data-name="5" class="cls-2" x="175.508" y="491.8"><tspan x="175.508">5</tspan></text>
+  <text id="_0" data-name="0" class="cls-3" transform="translate(409.644 392.272) scale(1 0.859)"><tspan x="0">0</tspan></text>
+  <text id="years" class="cls-4" transform="translate(410.644 455.272) scale(1 0.859)"><tspan x="0">years</tspan></text>
+  <text id="_1974-2024" data-name="1974-2024" class="cls-5" transform="translate(407.644 506.272) scale(1 0.859)"><tspan x="0">1974-2024</tspan></text>
+</svg>
