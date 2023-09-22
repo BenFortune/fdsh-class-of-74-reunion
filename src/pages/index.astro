@@ -77,9 +77,16 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		padding: 0;
 		font-size: 20px;
 		line-height: 1.6;
-		background-image: url(/images/fdsh-main-bg.png);
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	html.no-webp main {
+		background-image: url(/images/fdsh-main-bg.png);
+	}
+
+	html.webp main  {
+		background-image: url(/images/fdsh-main-bg.webp);
 	}
 
 	h1 {
