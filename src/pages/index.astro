@@ -51,23 +51,23 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 				</section>
 			</div>
 		</section>
-			<section class="committee-wrapper">
-				<h2>Committee Members</h2>
-				<div class="committee-members">
-					{
-						COMMITTEE_MEMBERS.map((member, index) => {
-							return <ContactCard name={member.name} email={member.email}/>
-						})
-					}
-				</div>
-				<div>
-					Phone numbers for more information:
-					<ul>
-						<li>Daytime: 563.547.2220</li>
-						<li>Evening: 515.571.8999</li>
-					</ul>
-				</div>
-			</section>
+		<section class="committee-wrapper">
+			<h2>Committee Members</h2>
+			<div class="committee-members">
+				{
+					COMMITTEE_MEMBERS.map((member, index) => {
+						return <ContactCard name={member.name} email={member.email}/>
+					})
+				}
+			</div>
+			<div>
+				Phone numbers for more information:
+				<ul>
+					<li>Daytime: 563.547.2220</li>
+					<li>Evening: 515.571.8999</li>
+				</ul>
+			</div>
+		</section>
 	</main>
 </Layout>
 
@@ -77,7 +77,7 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		padding: 0;
 		font-size: 20px;
 		line-height: 1.6;
-		background-image: url(/images/background-idea-4.jpeg);
+		background-image: url(/images/background-idea-4a.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
@@ -184,6 +184,11 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 		width: 180px;
 	}
 
+	.committee-wrapper {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+
 	.committee-members {
 		display: flex;
 		flex-wrap: wrap;
@@ -197,11 +202,34 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 
 	@media (max-width: 1399px) {
 		main {
-			margin-top: auto;
+			margin-top: 0;
+			padding-top: 24px;
+		}
+
+		.img-wrapper {
+			position: relative;
+			top: 0;
+			max-width: 1400px;
+			width: auto;
+			margin: 0 auto 24px auto;
+		}
+
+		.main-content {
+			padding-top: 0;
+			padding-bottom: 0;
+			margin: 0 24px;
+		}
+
+		.committee-wrapper {
+			margin: 0 24px;
 		}
 	}
 
 	@media (max-width: 1200px) {
+		main {
+			background-position: 0 250px;
+		}
+
 		header {
 			display: block;
 		}
@@ -212,6 +240,39 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 
 		header .right-col {
 			display: none;
+		}
+	}
+
+
+	@media (max-width: 767px) {
+		main {
+			background: none transparent;
+		}
+
+
+		header section {
+			display: block;
+		}
+
+		header .left-col {
+			display: block;
+		}
+
+		header .fd-logo {
+			display: block;
+			margin: 0 auto;
+		}
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		.fifty-years-logo {
+			width: 120px;
+		}
+
+		.content-wrapper {
+			padding: 24px;
 		}
 	}
 </style>
