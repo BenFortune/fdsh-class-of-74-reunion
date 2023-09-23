@@ -14,6 +14,6 @@ export default defineConfig({
       enabled: true
     }
   }),
-  site: 'https://www.fdsh1974.com/',
+  site: 'https://www.fdsh1974.com',
   integrations: [sitemap()]
 });
