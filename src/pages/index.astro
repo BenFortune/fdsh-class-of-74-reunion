@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ContactCard from '../components/ContactCard.astro'
-import {COMMITTEE_MEMBERS} from "../commitee-memebers";
+import {COMMITTEE_MEMBERS} from "../commitee-members";
 ---
 
 <Layout title="FDSH Class of 1974">
@@ -27,27 +27,51 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 				<h2>Let's Celebrate!</h2>
 				<section>
 					<p>Believe it or not 2024 will mark the 50th year since we graduated from Fort Dodge Senior High. The Class of 74 Reunion Planning Committee would appreciate your help/attendance in celebrating this milestone. Part of the planning is knowing how many classmates will be able to attend. Please let one of the Committee Member classmates noted below, if you can, or cannot attend.</p>
-					<div>
-						The Reunion is still in the planning stage.  However, the following activities have been confirmed:
-						<ul>
-							<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/" target="_blank">Rides Bar and Grille</a>.  Snacks will be provided.  Adult beverages will be available at an additional cost.</li>
-							<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/" target="_blank">The Cardiff Center</a>. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
-						</ul>
-					</div>
-					<div>
-						Other activities include:
-						<ul>
-							<li>Saturday: Dodge Boys golf outing – this an annual event, held in conjunction with other FDHS graduating classes.  All proceeds are split between FDHS and St Edmonds.</li>
-						</ul>
-					</div>
-					<div>
-						Other tours are being explored/planned such as:
-						<ul>
-							<li>The recently Renovated Laramar Ballroom</li>
-							<li>Feeling like a teenager again by walking the halls of Fort Dodge Senior High</li>
-						</ul>
-					</div>
-					<p>Stay tuned to either the <a href="https://www.facebook.com/groups/267523435625/" target="_blank">FDHS Class of 74 Facebook page</a> or this website page for updates and costs. We look forward to a great 50th reunion filled with many conversations and laughs!</p>
+					The Reunion activities include:
+					<ul>
+						<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/" target="_blank">Rides Bar and Grille</a> from 5-11.  Snacks will be provided.  Adult beverages will be available at an additional cost. Happy Hour is 5-7. A photo booth, casual conversation and great memories will be the highlights of the evening.</li>
+						<li class="golf-event-info">
+							<p>Saturday: The FDSH Class of 1974 has been formally invited to join the 22nd Annual Dodge Boys (and girls) Open.  This Golf Event falls on the Saturday of our reunion weekend, August 10th.  This event has evolved over the years with invitations going out to all Fort Dodge Senior High and St Edmunds classes of 1969 through 1974.  It is open to both men and women from these classes and has drawn Fort Dodge graduates from all over the Country.</p>
+							<p>The first foursome tee-off begins at 8:30 AM for the 18-hole Best Ball tournament with a fun nostalgic short awards program around 1:30 PM.  You are required to put together your own foursome.  The $75 per person entry fee includes two carts per foursome.  Net proceeds are split between Senior High and St Edmunds summer Basketball Camps.</p>
+							<p>Anyone interested in putting a foursome together and joining the event can send an email to Scott VanGundy at <a href="mailto:slvg52@gmail.com">slvg52@gmail.com</a>.  Scott will put you on the list and keep you up to date on all the details.</p>
+						</li>
+						<li>A tour of Fort Dodge Senior organized by Mick Rathermel will take place on Saturday, August 10</li>
+						<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/" target="_blank">The Cardiff Center at Fort Frenzy</a>. Social Hour & Check-in begins at 5:00 with a cash bar. Dinner is at 6:30 catered by the Lidderdale Country Store. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
+					</ul>
+					Download the <a href="/Official-Program.pdf">Official Program here</a>
+				</section>
+				<section>
+					<h3>
+						Registration
+					</h3>
+					<p>Cost is $60/person & covers both nights of fun.</p>
+					<div>Download following form and follow the steps listed in the form to get registered:</div>
+					<a href="/Registration-Form.pdf" target="_blank">Registration Form</a>
+					<p>Online registration coming soon!</p>
+					<p>Deadline to register is July 10</p>
+				</section>
+				<section>
+					<h3>Hotel Info</h3>
+					<p class="hotel-subtext">*All rooms are held under the Ft Dodge Class of 1974</p>
+					<ul>
+						<li>
+							<div>Country Inn & Suites</div>
+							<div>$110 + tax</div>
+							<div>(515) 955-2259</div>
+							<div>On hold until 7/1</div>
+						</li>
+						<li>
+							<div>Best Western (Old Starlite)</div>
+							<div>$99 + tax</div>
+							<div>(515) 573-7177</div>
+							<div>On hold until 7/26</div>
+						</li>
+						<li>
+							<div>Brookstone Inn & Suites</div>
+							<div>(515) 206-1591</div>
+						</li>
+					</ul>
+					<p>After hold date, prices go up</p>
 				</section>
 			</div>
 		</section>
@@ -190,6 +214,21 @@ import {COMMITTEE_MEMBERS} from "../commitee-memebers";
 
 	.fifty-years-logo {
 		width: 180px;
+	}
+
+	.golf-event-info p:first-child {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.golf-event-info p:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.hotel-subtext {
+		font-size: 16px;
+		font-style: italic;
 	}
 
 	.committee-wrapper {
