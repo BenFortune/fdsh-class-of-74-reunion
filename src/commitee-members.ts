@@ -5,10 +5,6 @@ interface MemberInfo {
 
 export const COMMITTEE_MEMBERS: MemberInfo[] = [
     {
-        name: 'Bill Schultz',
-        email: 'bill_1_us@yahoo.com'
-    },
-    {
         name: 'Charla Green Wilke',
         email: 'crgreen939@gmail.com'
     },
