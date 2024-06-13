@@ -1,371 +1,504 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ContactCard from '../components/ContactCard.astro'
-import {COMMITTEE_MEMBERS} from "../commitee-members";
+import Layout from "../layouts/Layout.astro";
+import ContactCard from "../components/ContactCard.astro";
+import { COMMITTEE_MEMBERS } from "../commitee-members";
 ---
 
 <Layout title="FDSH Class of 1974">
-	<header>
-		<section class="left-col">
-			<img class="fd-logo" alt="Fort Dodge Dodger Logo" src="fd-dodger-logo.svg">
-			<div>
-				<h1>Fort Dodge Senior High Class of '74</h1>
-				<p>50th Class Reunion August 9-10, 2024</p>
-			</div>
-		</section>
-		<section class="right-col">
-			<p>Friday Night at Rides Banquet Center</p>
-			<p>Saturday at the Cardiff Event Center 5pm - 11pm</p>
-		</section>
-	</header>
-	<main>
-		<div class="img-wrapper">
-			<img class="fifty-years-logo" alt="50 years 1974-2024 image" src="50-years.svg">
-		</div>
-		<section class="main-content">
-			<div class="content-wrapper">
-				<h2>Let's Celebrate!</h2>
-				<section>
-					<p>Believe it or not 2024 will mark the 50th year since we graduated from Fort Dodge Senior High. The Class of 74 Reunion Planning Committee would appreciate your help/attendance in celebrating this milestone. Part of the planning is knowing how many classmates will be able to attend. Please let one of the Committee Member classmates noted below, if you can, or cannot attend.</p>
-					The Reunion activities include:
-					<ul>
-						<li>Meet and greet get together will be held on Friday August 9 at <a href="http://www.ridesbar-grill.com/" target="_blank">Rides Banquet Center</a> from 5-11.  Snacks will be provided.  Adult beverages will be available at an additional cost. Happy Hour is 5-7. A photo booth, casual conversation and great memories will be the highlights of the evening.</li>
-						<li>Unfortunately, the 22nd Annual Dodge Boys (and girls) Open event has been cancelled.</li>
-						<li class="tournaments-info">
-							<p>Class of '74 50th Reunion Committee Presents:</p>
-							<p>Class of '74 <span>“Masters Tournament”</span> and Class of '74 <span>“Speed Demon Challenge”</span>.</p>
-							<p class="no-pad no-marg">Both take place at Fort Frenzy.</p>
-							<p class="no-pad no-marg">Miniature Golf course and Go-cart track rented Saturday Aug 10 for 2 hours: 9:00AM to 11:00AM.</p>
-							<ul>
-								<li>Both activities provide an opportunity for classmates to spend time together.</li>
-								<li>Proceeds from both activities go to FD Community Schools – via The Alumni Association</li>
-								<li>Ft Frenzy will have beverages available.</li>
-								<li>Awards given out at Saturday evening Banquet, and will advise classmates of total dollars generated</li>
-								<li>Classmates pay when participating by cash or check to The Alumni Association</li>
-							</ul>
-							<p>
-								<span>Class of 74 “Masters Tournament”</span>
-							</p>
-							<p>Who will win the Coveted Class of 74 Masters Tournament? Classmates can take on the grueling course including the Mesmerizing Windmill, individually or in teams of 2- 4. Anyone can hit a golf ball on an expertly care for grassy yard, but it takes great skill and timing to tame the Fort Frenzy Miniature Golf course!</p>
-							<ul>
-								<li>Cost: $10/person</li>
-								<li>Awards by individual score (Lowest) 1 st place, 2nd place, 3 rd place, and a “special” High Score award.</li>
-								<li>Cards turned in to Reunion Committee Rep.</li>
-							</ul>
-							<p>
-								<span>“Class of 74 “Speed Demon Challenge”</span>
-							</p>
-							<p>Determine who from the Class of 1974 is the true Speed Demon!</p>
-							<p>Anyone can drive fast going in circles, but they say it takes determination, skill, and guts, to take on the Fort Frenzy Go-Cart paved bank course, with its right turns followed by immediate left turns. Needless to say, this track is not for the faint of heart! Ask the King of NASCAR: Richard Petty, for his thoughts!</p>
-							<ul>
-								<li>One classmate on the course at a time, or depending on number of participants spread out 2 -3 at one time</li>
-								<li>Each Speed Demon Challenge is 3 laps of the banked and curved paved course. Cost $10/ Challenge. Classmates can do as many Challenges as they choose.</li>
-								<li>Best Lap time is determined by dividing the total time by the number of laps taken.</li>
-								<li>Awards by Best Time: (1st ) Speed Demon, (2nd ) Speed Racer, (3rd ) Speedy, and Grandma Moses (slowest).</li>
-							</ul>
-						</li>
-						<li>A tour of Fort Dodge Senior High School organized by Mick Rathermel will take place on Saturday, August 10</li>
-						<li>A sit-down meal will be held on Saturday Evening August 10 at <a href="https://thecardiffcenter.com/" target="_blank">The Cardiff Center at Fort Frenzy</a>. Social Hour & Check-in begins at 5:00 with a cash bar. Dinner is at 6:30 catered by the Lidderdale Country Store. The Brookstone Inn & Suites (built in 2019) parking lot is connected to the Cardiff Center.</li>
-					</ul>
-					Download the <a href="/Official-Program.pdf">Official Program here</a>
-				</section>
-				<section>
-					<h3>
-						Registration
-					</h3>
-					<p>Cost is $60/person & covers both nights of fun.</p>
-					<div>Download the following form and follow the steps listed in the form to get registered:</div>
-					<a href="/Registration-Form.pdf" target="_blank">Registration Form</a>
-					<p>Deadline to register is July 10</p>
-				</section>
-				<section>
-					<h3>Hotel Info</h3>
-					<p class="hotel-subtext">*All rooms are held under the Ft Dodge Class of 1974</p>
-					<ul>
-						<li>
-							<div>Country Inn & Suites</div>
-							<div>$110 + tax</div>
-							<div>(515) 955-2259</div>
-							<div>On hold until 7/1</div>
-						</li>
-						<li>
-							<div>Best Western (Old Starlite)</div>
-							<div>$99 + tax</div>
-							<div>(515) 573-7177</div>
-							<div>On hold until 7/26</div>
-						</li>
-						<li>
-							<div>Brookstone Inn & Suites</div>
-							<div>(515) 206-1591</div>
-						</li>
-					</ul>
-					<p>After hold date, prices go up</p>
-				</section>
-			</div>
-		</section>
-		<section class="committee-wrapper">
-			<h2>Committee Members</h2>
-			<div class="committee-members">
-				{
-					COMMITTEE_MEMBERS.map((member, index) => {
-						return <ContactCard name={member.name} email={member.email}/>
-					})
-				}
-			</div>
-			<div>
-				Phone numbers for more information:
-				<ul>
-					<li>Daytime: 563.547.2220</li>
-					<li>Evening: 515.571.8999</li>
-				</ul>
-			</div>
-		</section>
-	</main>
+    <header>
+        <section class="left-col">
+            <img
+                class="fd-logo"
+                alt="Fort Dodge Dodger Logo"
+                src="fd-dodger-logo.svg"
+            />
+            <div>
+                <h1>Fort Dodge Senior High Class of '74</h1>
+                <p>50th Class Reunion August 9-10, 2024</p>
+            </div>
+        </section>
+        <section class="right-col">
+            <p>Friday Night at Rides Banquet Center</p>
+            <p>Saturday at the Cardiff Event Center 5pm - 11pm</p>
+        </section>
+    </header>
+    <main>
+        <div class="img-wrapper">
+            <img
+                class="fifty-years-logo"
+                alt="50 years 1974-2024 image"
+                src="50-years.svg"
+            />
+        </div>
+        <section class="main-content">
+            <div class="content-wrapper">
+                <h2>Let's Celebrate!</h2>
+                <section>
+                    <p>
+                        Believe it or not 2024 will mark the 50th year since we
+                        graduated from Fort Dodge Senior High. The Class of 74
+                        Reunion Planning Committee would appreciate your
+                        help/attendance in celebrating this milestone. Part of
+                        the planning is knowing how many classmates will be able
+                        to attend. Please let one of the Committee Member
+                        classmates noted below, if you can, or cannot attend.
+                    </p>
+                    The Reunion activities include:
+                    <ul>
+                        <li>
+                            Meet and greet get together will be held on Friday
+                            August 9 at <a
+                                href="http://www.ridesbar-grill.com/"
+                                target="_blank">Rides Banquet Center</a
+                            > from 5-11. Snacks will be provided. Adult beverages
+                            will be available at an additional cost. Happy Hour is
+                            5-7. A photo booth, casual conversation and great memories
+                            will be the highlights of the evening.
+                        </li>
+                        <li>
+                            Unfortunately, the 22nd Annual Dodge Boys (and
+                            girls) Open event has been cancelled.
+                        </li>
+                        <li class="tournaments-info">
+                            <p>
+                                As an alternative, Class of '74 50th Reunion
+                                Committee Presents:
+                            </p>
+                            <p>
+                                Class of '74 <span>“Masters Tournament”</span> and
+                                Class of '74 <span>“Speed Demon Challenge”</span
+                                >.
+                            </p>
+                            <p class="no-pad no-marg">
+                                Both take place at Fort Frenzy.
+                            </p>
+                            <p class="no-pad no-marg">
+                                Miniature Golf course and Go-cart track rented
+                                Saturday Aug 10 for 2 hours: 9:00AM to 11:00AM.
+                            </p>
+                            <ul>
+                                <li>
+                                    Both activities provide an opportunity for
+                                    classmates to spend time together.
+                                </li>
+                                <li>
+                                    Proceeds from both activities go to FD
+                                    Community Schools – via The Alumni
+                                    Association
+                                </li>
+                                <li>
+                                    Ft Frenzy will have beverages available.
+                                </li>
+                                <li>
+                                    Awards given out at Saturday evening
+                                    Banquet, and will advise classmates of total
+                                    dollars generated
+                                </li>
+                                <li>
+                                    Classmates pay when participating by cash or
+                                    check to The Alumni Association
+                                </li>
+                            </ul>
+                            <p>
+                                <span>Class of 74 “Masters Tournament”</span>
+                            </p>
+                            <p>
+                                Who will win the Coveted Class of 74 Masters
+                                Tournament? Classmates can take on the grueling
+                                course including the Mesmerizing Windmill,
+                                individually or in teams of 2- 4. Anyone can hit
+                                a golf ball on an expertly care for grassy yard,
+                                but it takes great skill and timing to tame the
+                                Fort Frenzy Miniature Golf course!
+                            </p>
+                            <ul>
+                                <li>Cost: $10/person</li>
+                                <li>
+                                    Awards by individual score (Lowest) 1 st
+                                    place, 2nd place, 3 rd place, and a
+                                    “special” High Score award.
+                                </li>
+                                <li>
+                                    Cards turned in to Reunion Committee Rep.
+                                </li>
+                            </ul>
+                            <p>
+                                <span>“Class of 74 “Speed Demon Challenge”</span
+                                >
+                            </p>
+                            <p>
+                                Determine who from the Class of 1974 is the true
+                                Speed Demon!
+                            </p>
+                            <p>
+                                Anyone can drive fast going in circles, but they
+                                say it takes determination, skill, and guts, to
+                                take on the Fort Frenzy Go-Cart paved bank
+                                course, with its right turns followed by
+                                immediate left turns. Needless to say, this
+                                track is not for the faint of heart! Ask the
+                                King of NASCAR: Richard Petty, for his thoughts!
+                            </p>
+                            <ul class="bottom-marg">
+                                <li>
+                                    One classmate on the course at a time, or
+                                    depending on number of participants spread
+                                    out 2 -3 at one time
+                                </li>
+                                <li>
+                                    Each Speed Demon Challenge is 3 laps of the
+                                    banked and curved paved course. Cost $10/
+                                    Challenge. Classmates can do as many
+                                    Challenges as they choose.
+                                </li>
+                                <li>
+                                    Best Lap time is determined by dividing the
+                                    total time by the number of laps taken.
+                                </li>
+                                <li>
+                                    Awards by Best Time: (1st ) Speed Demon,
+                                    (2nd ) Speed Racer, (3rd ) Speedy, and
+                                    Grandma Moses (slowest).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            A tour of Fort Dodge Senior High School organized by
+                            Mick Rathermel will take place at 1:00 Saturday
+                            afternoon, August 10.
+                        </li>
+                        <li>
+                            A sit-down meal will be held on Saturday Evening
+                            August 10 at <a
+                                href="https://thecardiffcenter.com/"
+                                target="_blank"
+                                >The Cardiff Center at Fort Frenzy</a
+                            >. Social Hour & Check-in begins at 5:00 with a cash
+                            bar. Dinner is at 6:30 catered by the Lidderdale
+                            Country Store. The Brookstone Inn & Suites (built in
+                            2019) parking lot is connected to the Cardiff
+                            Center.
+                        </li>
+                    </ul>
+                    Download the <a href="/Official-Program.pdf"
+                        >Official Program here</a
+                    >
+                </section>
+                <section>
+                    <h3>Registration</h3>
+                    <p>Cost is $60/person & covers both nights of fun.</p>
+                    <div>
+                        Download the following form and follow the steps listed
+                        in the form to get registered:
+                    </div>
+                    <a href="/Registration-Form.pdf" target="_blank"
+                        >Registration Form</a
+                    >
+                    <p>Deadline to register is July 10</p>
+                </section>
+                <section>
+                    <h3>Hotel Info</h3>
+                    <p class="hotel-subtext">
+                        *All rooms are held under the Ft Dodge Class of 1974
+                    </p>
+                    <ul>
+                        <li>
+                            <div>Country Inn & Suites</div>
+                            <div>$110 + tax</div>
+                            <div>(515) 955-2259</div>
+                            <div>On hold until 7/1</div>
+                        </li>
+                        <li>
+                            <div>Best Western (Old Starlite)</div>
+                            <div>$99 + tax</div>
+                            <div>(515) 573-7177</div>
+                            <div>On hold until 7/26</div>
+                        </li>
+                        <li>
+                            <div>Brookstone Inn & Suites</div>
+                            <div>(515) 206-1591</div>
+                        </li>
+                    </ul>
+                    <p>After hold date, prices go up</p>
+                </section>
+            </div>
+        </section>
+        <section class="committee-wrapper">
+            <h2>Committee Members</h2>
+            <div class="committee-members">
+                {
+                    COMMITTEE_MEMBERS.map((member, index) => {
+                        return (
+                            <ContactCard
+                                name={member.name}
+                                email={member.email}
+                            />
+                        );
+                    })
+                }
+            </div>
+            <div>
+                Phone numbers for more information:
+                <ul>
+                    <li>Daytime: 563.547.2220</li>
+                    <li>Evening: 515.571.8999</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </Layout>
 
 <style>
-	main {
-		margin: 3rem auto auto auto;
-		padding: 0;
-		font-size: 20px;
-		line-height: 1.6;
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
+    main {
+        margin: 3rem auto auto auto;
+        padding: 0;
+        font-size: 20px;
+        line-height: 1.6;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
-	html.no-webp main {
-		background-image: url(/images/fdsh-main-bg.png);
-	}
+    html.no-webp main {
+        background-image: url(/images/fdsh-main-bg.png);
+    }
 
-	html.webp main  {
-		background-image: url(/images/fdsh-main-bg.webp);
-	}
+    html.webp main {
+        background-image: url(/images/fdsh-main-bg.webp);
+    }
 
-	h1 {
-		margin-top: 1rem;
-		margin-bottom: 0;
-		color: var(--dodger-red);
-		font-family: var(--font-family-heading);
-		font-size: 2rem;
-		line-height: 1;
-		text-align: center;
-	}
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        color: var(--dodger-red);
+        font-family: var(--font-family-heading);
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+    }
 
-	h2 {
-		margin: 0 0 1.5rem 0;
-		font-family: var(--font-family-heading);
-		font-size: 3rem;
-		text-align: center;
-		text-decoration: underline;
-		text-decoration-color: #b18335;
-		text-underline-offset: .5rem;
-	}
+    h2 {
+        margin: 0 0 1.5rem 0;
+        font-family: var(--font-family-heading);
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #b18335;
+        text-underline-offset: 0.5rem;
+    }
 
-	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 24px;
-		border-bottom: 1px solid #CCC;
-	}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        border-bottom: 1px solid #ccc;
+    }
 
-	header p {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-	}
+    header p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
 
-	header .left-col {
-		display: flex;
-	}
+    header .left-col {
+        display: flex;
+    }
 
-	header .left-col p {
-		margin-top: .75rem;
-	}
+    header .left-col p {
+        margin-top: 0.75rem;
+    }
 
-	header .right-col p {
-		margin: 0;
-	}
+    header .right-col p {
+        margin: 0;
+    }
 
-	header .fd-logo {
-		width: 120px;
-		margin-right: 24px;
-	}
+    header .fd-logo {
+        width: 120px;
+        margin-right: 24px;
+    }
 
-	a {
-		color: #1b4d89;
-	}
+    a {
+        color: #1b4d89;
+    }
 
-	a:hover, a:focus, a:visited {
-		color: #6CF;
-		text-decoration: none;
-	}
+    a:hover,
+    a:focus,
+    a:visited {
+        color: #6cf;
+        text-decoration: none;
+    }
 
-	.main-content {
-		position: relative;
-		padding-top: 85px;
-		padding-bottom: 60px;
-	}
+    .main-content {
+        position: relative;
+        padding-top: 85px;
+        padding-bottom: 60px;
+    }
 
-	.main-content h2 {
-		margin: 0 0 1.5rem 0;
-		line-height: 1;
-		color: #333;
-	}
+    .main-content h2 {
+        margin: 0 0 1.5rem 0;
+        line-height: 1;
+        color: #333;
+    }
 
-	.main-content section, .committee-wrapper {
-		max-width: 1400px;
-		margin: 0 auto;
-	}
+    .main-content section,
+    .committee-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 
-	.content-wrapper {
-		max-width: 1400px;
-		margin: 0 auto;
-		padding: 24px 36px;
-		background-color: #FFF;
-		border: 2px solid #b18335;
-		border-radius: 6px;
-	}
+    .content-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 24px 36px;
+        background-color: #fff;
+        border: 2px solid #b18335;
+        border-radius: 6px;
+    }
 
-	.img-wrapper {
-		display: flex;
-		justify-content: center;
-		width: 1400px;
-		max-width: 1400px;
-		top: 75px;
-		left: 0;
-		right: 0;
-		margin: auto;
-		position: absolute;
-		z-index: 100;
-	}
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 1400px;
+        max-width: 1400px;
+        top: 75px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        z-index: 100;
+    }
 
-	.no-pad {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
+    .no-pad {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-	.no-marg {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+    .no-marg {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
-	.fifty-years-logo {
-		width: 180px;
-	}
+    .bottom-marg {
+        margin-bottom: 1em;
+    }
 
-	.tournaments-info p:first-child {
-		margin-top: 0;
-		padding-top: 0;
-	}
+    .fifty-years-logo {
+        width: 180px;
+    }
 
-	.tournaments-info p:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
+    .tournaments-info p:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
 
-	.tournaments-info span {
-		font-weight: bold;
-	}
+    .tournaments-info p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 
-	.hotel-subtext {
-		font-size: 16px;
-		font-style: italic;
-	}
+    .tournaments-info span {
+        font-weight: bold;
+    }
 
-	.committee-wrapper {
-		max-width: 1400px;
-		margin: 0 auto;
-	}
+    .hotel-subtext {
+        font-size: 16px;
+        font-style: italic;
+    }
 
-	.committee-members {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+    .committee-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 
-	@media (min-width: 1920px) {
-		.main-content {
-			background-size: cover;
-		}
-	}
+    .committee-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-	@media (max-width: 1399px) {
-		main {
-			margin-top: 0;
-			padding-top: 24px;
-		}
+    @media (min-width: 1920px) {
+        .main-content {
+            background-size: cover;
+        }
+    }
 
-		.img-wrapper {
-			position: relative;
-			top: 0;
-			max-width: 1400px;
-			width: auto;
-			margin: 0 auto 24px auto;
-		}
+    @media (max-width: 1399px) {
+        main {
+            margin-top: 0;
+            padding-top: 24px;
+        }
 
-		.main-content {
-			padding-top: 0;
-			padding-bottom: 0;
-			margin: 0 24px;
-		}
+        .img-wrapper {
+            position: relative;
+            top: 0;
+            max-width: 1400px;
+            width: auto;
+            margin: 0 auto 24px auto;
+        }
 
-		.committee-wrapper {
-			margin: 0 24px;
-		}
-	}
+        .main-content {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0 24px;
+        }
 
-	@media (max-width: 1200px) {
-		main {
-			background-position: 0 250px;
-		}
+        .committee-wrapper {
+            margin: 0 24px;
+        }
+    }
 
-		header {
-			display: block;
-		}
+    @media (max-width: 1200px) {
+        main {
+            background-position: 0 250px;
+        }
 
-		header .left-col {
-			justify-content: center;
-		}
+        header {
+            display: block;
+        }
 
-		header .right-col {
-			display: none;
-		}
-	}
+        header .left-col {
+            justify-content: center;
+        }
 
+        header .right-col {
+            display: none;
+        }
+    }
 
-	@media (max-width: 767px) {
-		html.no-webp main, html.webp main, main {
-			background: none transparent;
-		}
+    @media (max-width: 767px) {
+        html.no-webp main,
+        html.webp main,
+        main {
+            background: none transparent;
+        }
 
-		header section {
-			display: block;
-		}
+        header section {
+            display: block;
+        }
 
-		header .left-col {
-			display: block;
-		}
+        header .left-col {
+            display: block;
+        }
 
-		header .fd-logo {
-			display: block;
-			margin: 0 auto;
-		}
+        header .fd-logo {
+            display: block;
+            margin: 0 auto;
+        }
 
-		h2 {
-			font-size: 2rem;
-		}
+        h2 {
+            font-size: 2rem;
+        }
 
-		.committee-wrapper h2 {
-			margin-top: 1.5rem;
-		}
+        .committee-wrapper h2 {
+            margin-top: 1.5rem;
+        }
 
-		.fifty-years-logo {
-			width: 120px;
-		}
+        .fifty-years-logo {
+            width: 120px;
+        }
 
-		.content-wrapper {
-			padding: 24px;
-		}
-	}
+        .content-wrapper {
+            padding: 24px;
+        }
+    }
 </style>
